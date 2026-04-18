@@ -49,7 +49,7 @@ GameObject.prototype.right = function()
 GameObject.prototype.collidesWith = function(other) 
 {
     return !(
-        this.bottom() < other.top() ||
+        this.bottom() < other.top() || 
         this.top() > other.bottom() ||
         this.right() < other.left() ||
         this.left() > other.right()

@@ -74,6 +74,15 @@ function animate()
     }
 
 
+    // lose condition || left wall
+    if (ball.x + ball.radius < 0)
+    {
+        ball.x = canvas.width / 2;
+        ball.y = canvas.height / 2;
+        ball.vx *= -1;
+    }
+
+
 
     //keys up and down for player
     if (keys["w"] && player1.y > 0)
